@@ -1,0 +1,200 @@
+/* Staff Portal Styles */
+.App {
+  text-align: center;
+}
+
+/* Custom styles for staff portal */
+.staff-portal {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Role-based color schemes */
+.admin-theme {
+  --primary-color: #dc2626;
+  --primary-light: #fef2f2;
+  --primary-dark: #991b1b;
+}
+
+.doctor-theme {
+  --primary-color: #059669;
+  --primary-light: #ecfdf5;
+  --primary-dark: #047857;
+}
+
+.nurse-theme {
+  --primary-color: #7c3aed;
+  --primary-light: #faf5ff;
+  --primary-dark: #6d28d9;
+}
+
+.receptionist-theme {
+  --primary-color: #ea580c;
+  --primary-light: #fff7ed;
+  --primary-dark: #c2410c;
+}
+
+.pharmacist-theme {
+  --primary-color: #0891b2;
+  --primary-light: #f0f9ff;
+  --primary-dark: #0e7490;
+}
+
+/* Dashboard cards */
+.dashboard-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-completed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-active {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+/* Navigation */
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  color: #6b7280;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.nav-link.active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Forms */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-secondary {
+  background-color: #6b7280;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563;
+}
+
+.btn-success {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #059669;
+}
+
+.btn-danger {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+}
+
+/* Tables */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+}
+
+.table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dashboard-card {
+    margin-bottom: 1rem;
+  }
+  
+  .nav-link {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+}
